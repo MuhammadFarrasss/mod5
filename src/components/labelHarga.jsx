@@ -1,17 +1,8 @@
-import labelHarga from  './components/labelHarga'
-
-function labelHarga({nama, harga, kategori }){
+function LabelHarga({nilai}){
     return (
-        <div className = "panel" > 
-        {
-            judul && <h2>
-                {
-                    judul 
-                }
-            </h2>
-        }
-        {children}
-        </div>
+<p>
+    Rp {nilai.toLocaleString('id-ID')}
+</p>
     )
 }
-export default panel
+export default LabelHarga;

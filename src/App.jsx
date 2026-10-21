@@ -2,7 +2,10 @@ import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import panel from  './components/panel'
+import Panel from  './components/panel'
+import KartuMenu from  './components/kartuMenu'
+import LabelHarga from  './components/labelHarga'
+
 
 const NAMA_PANGGILAN = 'Farras'
 const NIM = 42
@@ -20,6 +23,9 @@ function App() {
       <p>saldo awal kartu kantin = Rp. {NIM * 1000}</p>
       <p>{jam < 12? 'selamat pagi' : 'selamat siang'}</p>
       <button disabled>bayar</button>
+      <KartuMenu nama = "nasi ayam geprek" harga = {10000 + NIM * 100}/>
+      <KartuMenu nama = "nasi ayam" harga = {16000}/>
+      <KartuMenu nama = "JERUK" harga = {10000} kategori = "minuman"/>
     </>
   )
 }

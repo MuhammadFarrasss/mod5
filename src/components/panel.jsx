@@ -1,4 +1,4 @@
-function panel({judul, children}){
+function Panel({judul, children}){
     return (
         <div className = "panel" > 
         {
@@ -12,4 +12,4 @@ function panel({judul, children}){
         </div>
     )
 }
-export default panel
+export default Panel
